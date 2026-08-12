@@ -1,0 +1,25 @@
+name: React CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  hello:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Print Message
+        run: echo "Hello Suraj"
+
+      - name: Show Current Directory
+        run: pwd
+
+      - name: List Files
+        run: ls
